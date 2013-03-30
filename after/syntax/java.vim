@@ -10,8 +10,8 @@ silent! syntax clear javaSemicolon
 
 " Define syntax groups
 syntax match javaOpenBrace /\ {$/ skipwhite conceal cchar=:
-syntax match javaClosingBrace /\ \ }/ conceal cchar= 
-syntax match javaSemicolon /;$/ conceal cchar= 
+syntax match javaClosingBrace /\ \ }/ conceal
+syntax match javaSemicolon /;$/ conceal
 
 " Apply conceal
 hi! link Conceal javaOpenBrace
